@@ -71,3 +71,13 @@ h1{
 .show{
   opacity: 1;
 }
+
+.favoriteBtn{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 30px;
+
+}
+

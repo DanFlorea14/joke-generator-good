@@ -22,7 +22,16 @@ jokeBtn.addEventListener('click', () => {
     return res.json();
   })
   .then((data) => {
-    console.log(data.value.joke);
+
+    console.log(data)
     jokeText.innerText = data.value;
   })
 });
+
+
+const favoriteBtn = document.querySelector(".favoriteBtn");
+
+
+
+
+
