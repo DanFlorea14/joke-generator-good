@@ -1,5 +1,18 @@
-const jokeBtn = document.getElementById("jokeBtn")
-const jokeText = document.getElementById("jokeText")
+const openBtn = document.querySelector(".open")
+const modalContainer = document.querySelector(".container")
+const closeBtn  = document.querySelector(".closeBtn");
+
+openBtn.addEventListener("click", function(){
+  modalContainer.classList.add("show")
+})
+
+closeBtn.addEventListener("click", function(){
+  modalContainer.classList.remove("show")
+})
+
+
+const jokeBtn = document.getElementById("jokeBtn");
+const jokeText = document.getElementById("jokeText");
 
 jokeBtn.addEventListener('click', () => {
   console.log('Click')
@@ -12,4 +25,4 @@ jokeBtn.addEventListener('click', () => {
     console.log(data.value.joke);
     jokeText.innerText = data.value;
   })
-})
+});
